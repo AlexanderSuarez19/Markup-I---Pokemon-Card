@@ -1,0 +1,102 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: rgb(35, 121, 179);
+  display: grid;
+  grid-template-columns: min-content repeat(9, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "Kalos numName numName numName numName numName numName numName numName numName "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap . . . "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap . . . "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap . . . "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap type . ."
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap base base base "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap typeStats typeStats typeStats "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap typeStats typeStats typeStats "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap . . . "
+    "Kalos measures imgJap imgJap imgJap imgJap imgJap . . . ";
+}
+
+#region {
+  grid-area: Kalos;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90vh;
+}
+
+#kalos {
+  transform: rotate(-90deg);
+  width: 100px;
+}
+
+#numName {
+  font-size: 20px;
+  grid-area: numName;
+  display: flex;
+}
+
+#measures {
+  grid-area: measures;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imgJap {
+  grid-area: imgJap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#base {
+  margin-left: 10px;
+  grid-area: base;
+  font-size: 30px;
+}
+#type {
+  display: flex;
+  grid-area: type;
+}
+
+#water {
+  background-color: white;
+  max-width: 60px;
+  max-width: 60px;
+  margin-top: 20px;
+  border-radius: 50%;
+  margin: 5px;
+}
+#jap {
+  padding-top: 100px;
+  padding-right: 100px;
+  position: absolute;
+  font-size: 70px;
+  color: black;
+  opacity: 0.6;
+}
+
+#froakie {
+  margin-top: 50px;
+  max-height: 70vh;
+  align-self: center;
+}
+
+.typeStats {
+  grid-area: typeStats;
+  height: 100px;
+  width: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stat {
+  background-color: white;
+  color: black;
+  border-radius: 10%;
+  margin: 5px;
+  height: 25px;
+  padding: 5px;
+}
